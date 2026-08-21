@@ -1,4 +1,16 @@
 ## Noting down all the learnings
+
+Project setup steps:
+mkdir project && cd project
+git init
+python3 -m venv .venv && source .venv/bin/activate
+# write docker-compose.yml
+docker compose up -d
+pip install <libraries>
+pip freeze > requirements.txt
+
+## setup postgres Connection: 
+docker exec -it de-postgres psql -U postgres -d de_upskilling -c "SELECT ....;"
 ## setup postgres Connection: 
 docker exec -it de-postgres psql -U postgres -d de_upskilling -c "SELECT * FROM employees;"
 Commands:
