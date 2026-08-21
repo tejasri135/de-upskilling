@@ -1,6 +1,6 @@
 ## Noting down all the learnings
 ## setup postgres Connection: 
-
+docker exec -it de-postgres psql -U postgres -d de_upskilling -c "SELECT * FROM employees;"
 Commands:
 conn = psycopg2.connect(
     host="localhost",
